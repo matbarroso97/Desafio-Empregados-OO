@@ -9,7 +9,7 @@ public class Department {
     private int payDay;
 
     private Address address;
-    private List<Employee> employess = new ArrayList<>();
+    private List<Employee> employees = new ArrayList<>();
 
 
     public Department() {
@@ -46,23 +46,23 @@ public class Department {
     }
 
     public void addEmployee(Employee employee){
-        employess.add(employee);
+        employees.add(employee);
     }
 
     public void removeEmployee(Employee employee){
-        employess.remove(employee);
+        employees.remove(employee);
     }
 
     public double payroll(){
        double sum = 0;
-        for(Employee list : employess) {
+        for(Employee list : employees) {
             sum += list.getSalary();
         }
          return sum;
     }
 
     public void employeeNames(){
-        for (Employee employeeName : employess){
+        for (Employee employeeName : employees){
             System.out.println(employeeName.getName());
         }
 
