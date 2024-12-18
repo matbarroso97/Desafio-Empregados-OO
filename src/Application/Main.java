@@ -41,7 +41,7 @@ public class Main {
 
             dpt.addEmployee(emp);
         }
-
+        System.out.println();
         showReport(dpt);
 
         sc.close();
@@ -54,9 +54,7 @@ public class Main {
         System.out.printf("Departamento Vendas = R$ %.2f\n", dpt.payroll());
         System.out.printf("Pagamento realizado no dia %d\n", dpt.getPayDay());
         System.out.println("Funcionários: ");
-        for (Employee employeeName : dpt.employess){
-            System.out.println(employeeName.getName());
-        }
+        dpt.employeeNames();
         System.out.println("Para dúvidas favor entrar em contato: vendas@lojatop.com");
 
     }

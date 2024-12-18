@@ -9,7 +9,7 @@ public class Department {
     private int payDay;
 
     private Address address;
-    public List<Employee> employess = new ArrayList<>();
+    private List<Employee> employess = new ArrayList<>();
 
 
     public Department() {
@@ -61,6 +61,11 @@ public class Department {
          return sum;
     }
 
+    public void employeeNames(){
+        for (Employee employeeName : employess){
+            System.out.println(employeeName.getName());
+        }
 
+    }
 
 }
